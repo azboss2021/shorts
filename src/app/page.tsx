@@ -1,10 +1,15 @@
-import Accordion from "@/components/Accordion";
+import Buttons from "@/components/Buttons";
+import { FaArrowRightLong, FaHeart } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <main className="h-full min-h-screen w-full bg-gradient-to-b from-violet-950 to-black p-8 text-white">
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8">
-        <Accordion />
+    <main className="mx-auto h-full min-h-screen w-full max-w-[430px] text-white">
+      <div className="flex h-6 w-full items-center justify-center gap-1 text-center text-[8px] font-bold text-white uppercase">
+        <FaHeart /> Subscribe to <FaArrowRightLong /> Millionaire Start
+        <FaHeart />
+      </div>
+      <div className="-mt-12 flex h-screen w-full flex-col items-center justify-center gap-8">
+        <Buttons />
       </div>
     </main>
   );
